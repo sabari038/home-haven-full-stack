@@ -1,0 +1,164 @@
+/* RealEstateSignup.css */
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #242424, #a8deea);
+    padding: 20px;
+}
+
+.signup-content {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.signup-form {
+    padding: 35px;
+    flex: 1;
+}
+
+.signup-form-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.signup-form-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.signup-form-group .fa {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 1rem;
+}
+
+.signup-form-group input {
+    padding: 15px 20px 15px 45px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #333;
+    background: #f7f7f7;
+    transition: all 0.3s ease;
+}
+
+.signup-form-group input:focus {
+    border-color: #a777e3;
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form-group.signup-form-button input {
+    background: #6e8efb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.signup-form-group.signup-form-button input:hover {
+    background: #5b7bf0;
+}
+
+.signup-form-error {
+    color: #e74c3c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signup-image {
+    flex: 1;
+    background: #6e8efb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.signup-image figure {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.signup-image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.signup-image-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.signup-image-link:hover {
+    color: #ccc;
+}
+
+.agree-term {
+    margin-right: 10px;
+    transform: translateY(2px);
+}
+
+.label-agree-term {
+    display: inline-block;
+    color: #333;
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+
+.signup-form-group.signup-form-button {
+    text-align: center;
+}
+
+.term-service {
+    color: #6e8efb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.term-service:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .signup-content {
+        flex-direction: column;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .signup-form, .signup-image {
+        padding: 30px;
+    }
+
+    .signup-form {
+        padding-bottom: 0;
+    }
+
+    .signup-image-link {
+        margin-top: 10px;
+    }
+}

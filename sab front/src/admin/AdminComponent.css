@@ -1,0 +1,127 @@
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: #ffffff; /* White text for overall readability */
+  background-color: #1e1e1e; /* Darker background for the entire layout */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #242424; /* Dark gray background for sidebar */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 30px; /* Increased space for modern look */
+}
+
+.profile-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #a8deea; /* Slightly thicker light blue border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for the profile image */
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 1.3em;
+  color: #a8deea; /* Light blue text for profile name */
+}
+
+.role {
+  font-size: 0.95em;
+  color: #a8deea; /* Light blue color for role */
+  letter-spacing: 0.5px; /* Slight letter spacing for modern touch */
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 18px; /* Increased padding for a modern feel */
+  margin: 8px 0; /* More space between items */
+  color: #ffffff; /* White text for menu items */
+  text-decoration: none;
+  border-radius: 8px; /* Rounded corners for modern design */
+  background-color: #333333; /* Darker gray background for menu items */
+  transition: background 0.3s, transform 0.2s; /* Added transition for smooth effects */
+}
+
+.menu a:hover {
+  background-color: #a8deea; /* Light blue background on hover */
+  color: #242424; /* Dark text on hover for contrast */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+.dropdown {
+  width: 100%;
+  position: relative;
+}
+
+.dropdown-button {
+  width: 100%;
+  padding: 12px 18px;
+  margin: 8px 0;
+  color: #ffffff; /* White text for dropdown button */
+  background: linear-gradient(135deg, #333333, #4c4c4c); /* Gradient for dropdown button */
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  transition: background 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.dropdown-button:hover {
+  background-color: #a8deea; /* Light blue background on hover */
+  color: #242424; /* Dark text on hover for contrast */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #333333; /* Darker gray background for dropdown content */
+  width: 100%;
+  z-index: 1;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for dropdown content */
+}
+
+.dropdown-button:focus + .dropdown-content,
+.dropdown-content:hover {
+  display: flex;
+}
+
+.dropdown-content a {
+  padding: 12px 18px;
+  margin: 0;
+  color: #ffffff; /* White text for dropdown items */
+  background-color: #333333; /* Darker gray background for dropdown items */
+  transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #a8deea; /* Light blue background on hover */
+  color: #242424; /* Dark text on hover for contrast */
+}
+
+.content {
+  flex-grow: 1;
+  background-color: #f4f4f4; /* Light gray background for content */
+  color: #242424; /* Dark gray text for content */
+  padding: 30px; /* Increased padding for a modern look */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+  border-radius: 15px 0 0 15px; /* Rounded corners on content area */
+}

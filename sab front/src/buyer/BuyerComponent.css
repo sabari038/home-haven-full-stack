@@ -1,0 +1,73 @@
+.buyer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(to bottom, #6aaed3, #e0f7fa); /* Gradient background for more visual appeal */
+  min-height: 100vh; /* Ensure full-screen coverage */
+  box-sizing: border-box;
+}
+
+.property-details-container {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px; /* Slightly more rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 850px; /* Slightly wider for better layout */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-details-container:hover {
+  transform: translateY(-6px); /* Slight lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Center the cards with spacing */
+  gap: 24px; /* Increased gap for better spacing */
+  width: 100%;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  background-color: #f1f5f9; /* Softer light background for contrast */
+  border-radius: 16px; /* Rounded corners for the container */
+}
+
+.result-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px; /* Matching the container's rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  width: calc(30% - 24px); /* Adjusted width for better layout with spacing */
+  box-sizing: border-box;
+}
+
+.result-card:hover {
+  transform: translateY(-10px); /* Slightly higher lift on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  background-color: lightblue; /* Slight background change on hover */
+}
+
+@media (max-width: 768px) {
+  .result-card {
+    width: calc(48% - 24px); /* Adjusted width for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .result-card {
+    width: 100%; /* Full-width for mobile devices */
+  }
+  .buyer-container {
+    padding: 2rem 1rem; /* Adjusted padding for smaller screens */
+  }
+  .property-details-container, .results-container {
+    padding: 2rem 1.5rem; /* Adjusted padding for smaller screens */
+  }
+}

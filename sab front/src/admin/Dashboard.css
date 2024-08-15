@@ -1,0 +1,49 @@
+.dashboard-container {
+  padding: 20px;
+  padding-top: 50px;
+  background-color: #1a1a1a; /* Dark background for the dashboard container */
+  color: white; /* White text color */
+}
+
+.summary-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card-properties-card, .card-agents-card {
+  height: 150px; /* Adjusted height for better balance */
+  flex: 1;
+  padding: 20px;
+  margin: 0 10px;
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #333; /* Dark text color for better readability */
+}
+
+.card-properties-card {
+  background-color: #4caf50; /* Green background for properties card */
+}
+
+.card-agents-card {
+  background-color: #f44336; /* Red background for agents card */
+}
+
+.chart-container {
+  background-color: #333; /* Dark background for chart container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+}
+
+.chart-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff9900; /* Orange color for chart header */
+}

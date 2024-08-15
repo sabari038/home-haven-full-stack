@@ -1,0 +1,94 @@
+.agent-container {
+  padding: 30px;
+  background-color: #f8f9fa; /* Light gray background for a clean look */
+  border-radius: 16px; /* Increased border-radius for a more modern feel */
+  max-width: 800px;
+  margin: 40px auto; /* Added margin for better spacing */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  color: #333333; /* Dark gray text color for better readability */
+}
+
+.agent-header {
+  font-size: 2rem;
+  color: #004d61; /* Deep teal for a modern heading color */
+  margin-bottom: 25px;
+  text-align: center; /* Center-align the header */
+  font-weight: 700; /* Bold text for prominence */
+}
+
+.agent-list, .agent-add {
+  margin-bottom: 40px;
+}
+
+.agent-list-header, .agent-add-header {
+  font-size: 1.6rem;
+  color: #004d61; /* Deep teal for subheadings */
+  margin-bottom: 20px;
+  font-weight: 600; /* Slightly bolder text for subheadings */
+}
+
+.agent-list-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.agent-list-item {
+  background-color: #e0e0e0; /* Light background for list items */
+  padding: 15px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc; /* Light border for list items */
+  border-radius: 8px; /* More rounded corners for a modern look */
+  color: #333333; /* Dark gray text color */
+  transition: background 0.3s, transform 0.2s; /* Smooth transitions for hover effect */
+}
+
+.agent-list-item:hover {
+  background-color: #d0d0d0; /* Slightly darker on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.agent-list-item-name, .agent-list-item-email, .agent-list-item-phone {
+  margin: 5px 0;
+  font-size: 1.1rem; /* Slightly larger font size for clarity */
+}
+
+.agent-add-input {
+  display: block;
+  width: calc(100% - 24px);
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #004d61; /* Deep teal border for inputs */
+  border-radius: 8px; /* Rounded corners for inputs */
+  background-color: #ffffff; /* White background for inputs */
+  color: #333333; /* Dark gray text color */
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effect */
+}
+
+.agent-add-input::placeholder {
+  color: #999999; /* Softer placeholder color */
+}
+
+.agent-add-input:focus {
+  border-color: #004d61; /* Highlight border on focus */
+  box-shadow: 0 0 8px rgba(0, 77, 97, 0.2); /* Subtle shadow on focus */
+}
+
+.agent-add-button {
+  padding: 12px 20px; /* Larger padding for a more substantial button */
+  border: none;
+  border-radius: 8px; /* Rounded corners for the button */
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #004d61; /* Deep teal background for button */
+  color: #ffffff; /* White text color for contrast */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for hover effect */
+  align-self: center;
+  width: auto;
+}
+
+.agent-add-button:hover {
+  background-color: #003a4b; /* Darker teal on hover */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}

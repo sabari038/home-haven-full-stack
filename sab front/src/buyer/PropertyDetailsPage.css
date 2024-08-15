@@ -1,0 +1,151 @@
+.property-details-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Aligns the content to the top */
+  padding: 3rem 2rem;
+  background: linear-gradient(to bottom, #fafafa, #6195f4); /* Subtle gradient for depth */
+  min-height: 100vh;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.property-image {
+  margin-top: 200px;
+  width: 100%;
+  max-width: 550px; /* Max width for the image */
+  margin-right: 2rem; /* Space between image and details */
+  border-radius: 20px; /* More rounded corners for modern appeal */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for a floating effect */
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth, extended transitions */
+  flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+.property-image:hover {
+  transform: scale(1.05); /* Slightly more pronounced zoom on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+
+.property-details-container {
+  flex-grow: 1; /* Allows the details container to grow and fill space */
+  background: #ffffff; /* White background for contrast */
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+  margin-bottom: 2.5rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.property-details-container:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Pronounced shadow on hover */
+  transform: translateY(-8px); /* Slightly higher lift effect */
+}
+
+.property-details-container h2 {
+  font-size: 2.2rem; /* Larger, more impactful title */
+  font-weight: 800; /* Bolder font weight */
+  color: #1a1a1a; /* Darker text color for better contrast */
+  margin-top: 0;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #a8deea; /* Thicker accent border */
+  padding-bottom: 1rem;
+  letter-spacing: 0.5px; /* Slight letter spacing for readability */
+}
+
+.property-details-container div {
+  margin: 1.5rem 0; /* Increased spacing for better readability */
+  font-size: 1.1rem; /* Slightly larger text */
+  color: #444; /* Softer dark gray */
+  line-height: 1.6; /* Better line spacing */
+}
+
+.property-features,
+.property-amenities {
+  margin-top: 2rem;
+}
+
+.property-features h3,
+.property-amenities h3 {
+  font-size: 1.8rem; /* Larger subheading */
+  font-weight: 700; /* Bold subheading */
+  color: #1a1a1a; /* Consistent dark text color */
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.property-features h3::after,
+.property-amenities h3::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #a8deea; /* Accent underline */
+}
+
+.property-features ul,
+.property-amenities ul {
+  list-style-type: square; /* Square list items for modern look */
+  padding-left: 35px; /* Increased padding for emphasis */
+  font-size: 1rem;
+}
+
+.property-features li,
+.property-amenities li {
+  margin: 0.8rem 0; /* Increased spacing between items */
+  color: #555; /* Medium gray for items */
+  line-height: 1.5;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .property-details-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .property-image {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .property-details-container {
+    padding: 2rem;
+  }
+
+  .property-features ul,
+  .property-amenities ul {
+    padding-left: 25px; /* Adjusted padding for smaller screens */
+  }
+
+  .property-details-container h2 {
+    font-size: 2rem; /* Adjusted font size for tablets */
+  }
+
+  .property-features h3,
+  .property-amenities h3 {
+    font-size: 1.6rem; /* Adjusted font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .property-details-container {
+    padding: 1.5rem;
+    border-radius: 12px; /* Adjusted border-radius for smaller screens */
+  }
+
+  .property-features ul,
+  .property-amenities ul {
+    padding-left: 20px; /* Further adjusted padding */
+  }
+
+  .property-details-container h2 {
+    font-size: 1.8rem; /* Reduced font size for smaller screens */
+  }
+
+  .property-features h3,
+  .property-amenities h3 {
+    font-size: 1.4rem; /* Adjusted font size */
+  }
+}

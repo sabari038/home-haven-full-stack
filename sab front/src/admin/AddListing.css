@@ -1,0 +1,114 @@
+.add-listing-container {
+  padding: 30px;
+  background-color: #f8f9fa; /* Slightly off-white background for a clean look */
+  border-radius: 16px; /* Increased border-radius for a modern feel */
+  max-width: 800px;
+  margin: 40px auto; /* More margin for breathing space */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for more depth */
+  color: #333333; /* Dark gray text color for better readability */
+}
+
+.add-listing-container h1 {
+  margin-bottom: 30px;
+  font-size: 2rem; /* Larger font size for heading */
+  color: #004d61; /* Deep teal for a more sophisticated heading color */
+  text-align: center;
+  font-weight: 700; /* Slightly heavier weight for prominence */
+  letter-spacing: 1px; /* Subtle letter spacing for a polished look */
+}
+
+.add-listing-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Use gap for consistent spacing between form elements */
+}
+
+.add-listing-container label {
+  font-size: 1.1rem;
+  color: #555555; /* Softer gray for labels */
+  font-weight: 600; /* Slightly bolder text for labels */
+  display: block; /* Ensure labels are block-level for full width */
+  margin-bottom: 8px; /* Space between label and input */
+}
+
+.add-listing-container input,
+.add-listing-container textarea,
+.add-listing-container select {
+  padding: 15px; /* More padding for a substantial feel */
+  border: 1px solid #a8deea;
+  border-radius: 8px; /* Larger radius for a more modern touch */
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #333333;
+  width: 100%; /* Ensure all inputs take up the full width */
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effect */
+}
+
+.add-listing-container input:focus,
+.add-listing-container textarea:focus,
+.add-listing-container select:focus {
+  border-color: #004d61; /* Highlight the input border on focus */
+  box-shadow: 0 0 8px rgba(0, 77, 97, 0.3); /* Subtle shadow on focus */
+}
+
+.add-listing-container input::placeholder,
+.add-listing-container textarea::placeholder {
+  color: #bbbbbb; /* Softer placeholder color */
+}
+
+.add-listing-container button {
+  padding: 14px 24px; /* Larger padding for the button */
+  border: none;
+  border-radius: 8px; /* Rounded corners for the button */
+  font-size: 1.2rem; /* Larger font size for prominence */
+  cursor: pointer;
+  background-color: #004d61; /* Deep teal for a modern button color */
+  color: #ffffff; /* White text color for contrast */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for hover effect */
+  align-self: center;
+  width: auto;
+}
+
+.add-listing-container button:hover {
+  background-color: #003a4b; /* Darker teal on hover */
+  transform: translateY(-3px); /* More pronounced lift effect on hover */
+}
+
+/* Additional Flexbox for Grouped Inputs */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-row > div {
+  flex: 1; /* Ensure equal width for both elements */
+}
+
+.form-row > div:first-child {
+  margin-right: 10px; /* Small margin on the right for the first input */
+}
+/* Ensure overall form style remains consistent */
+
+
+/* Flexbox for grouped checkboxes */
+.checkbox-group {
+  display: flex;
+  align-items: center; /* Align checkboxes and labels vertically in the center */
+  gap: 20px; /* Space between checkboxes */
+}
+
+.checkbox-group label {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #555555;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 8px; /* Small space between checkbox and label */
+}
+

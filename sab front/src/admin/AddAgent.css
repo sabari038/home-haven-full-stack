@@ -1,0 +1,59 @@
+.add-agent-container {
+  padding: 25px;
+  background-color: #f4f4f4; /* Light gray background for the form container */
+  border-radius: 12px; /* Slightly rounded corners for a modern look */
+  max-width: 600px;
+  margin: 30px auto; /* Center the form with some margin */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  color: #242424; /* Dark gray text color for better readability */
+}
+
+.add-agent-h1 {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: #a8deea; /* Light blue color for heading */
+  text-align: center; /* Center align the heading */
+  font-weight: bold; /* Make the heading bold */
+}
+
+.add-agent-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-agent-label {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #333333; /* Dark gray color for labels */
+  font-weight: 500; /* Slightly bolder text for labels */
+}
+
+.add-agent-input {
+  padding: 12px;
+  border: 1px solid #a8deea; /* Light blue border for inputs */
+  border-radius: 6px; /* Slightly more rounded corners */
+  font-size: 1rem;
+  margin-top: 8px;
+  background-color: #ffffff; /* White background for inputs */
+  color: #242424; /* Dark text color for input text */
+}
+
+.add-agent-input::placeholder {
+  color: #888888; /* Light gray color for placeholder text */
+}
+
+.add-agent-button {
+  padding: 12px 18px; /* Increased padding for a more substantial button */
+  border: none;
+  border-radius: 6px; /* Rounded corners for the button */
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: black; /* Orange background for button */
+  color: #a8deea; /* White text color */
+  transition: background 0.3s, transform 0.2s; /* Smooth transitions for hover effect */
+}
+
+.add-agent-button:hover {
+  background-color: black; /* Darker orange on hover */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}

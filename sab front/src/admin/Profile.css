@@ -1,0 +1,96 @@
+.profwhole {
+  background-color: #f4f4f4; /* Light gray background for the whole profile section */
+}
+
+.profile-container {
+  padding: 30px; /* Increased padding for better spacing */
+  background-color: #ffffff; /* Clean white background for the container */
+  border-radius: 12px; /* More rounded corners for a modern look */
+  max-width: 600px;
+  margin: 0 auto;
+  color: #333333; /* Dark gray text color for readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem; /* Larger font size for prominence */
+  color: #007acc; /* Bright blue color for header */
+  text-align: center; /* Center-align the header */
+}
+
+.profile-profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-form-group {
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.profile-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333333; /* Dark gray color for labels */
+}
+
+.profile-form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc; /* Light gray border for input fields */
+  border-radius: 6px; /* More rounded corners for inputs */
+  font-size: 1rem;
+  color: #333333; /* Dark text color for inputs */
+  background-color: #f9f9f9; /* Very light gray background for inputs */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effect */
+}
+
+.profile-form-group input:disabled {
+  background-color: #e9e9e9; /* Slightly lighter gray for disabled inputs */
+  color: #777777; /* Gray text color for disabled inputs */
+}
+
+.profile-form-group input:focus {
+  border-color: #007acc; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 122, 204, 0.2); /* Subtle blue shadow on focus */
+}
+
+.profile-form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-form-actions button {
+  padding: 12px 20px; /* Increased padding for a more substantial button */
+  margin-left: 10px;
+  border: none;
+  border-radius: 6px; /* Rounded corners for buttons */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.profile-form-actions button:first-child {
+  background-color: #4caf50; /* Green for primary action */
+  color: #ffffff;
+}
+
+.profile-form-actions button:first-child:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.profile-form-actions button:last-child {
+  background-color: #e74c3c; /* Red for secondary action */
+  color: #ffffff;
+}
+
+.profile-form-actions button:last-child:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+.profile-form-actions button:disabled {
+  background-color: #b0b0b0; /* Gray for disabled buttons */
+  cursor: not-allowed;
+}

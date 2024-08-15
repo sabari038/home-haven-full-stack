@@ -1,0 +1,103 @@
+.messages-container {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light gray background for a clean look */
+  color: #333333; /* Dark gray text color for readability */
+  border-radius: 8px; /* Rounded corners for a modern touch */
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.6rem; /* Slightly larger font size for prominence */
+  color: #007acc; /* Bright blue for the heading */
+}
+
+.messages-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.message-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0; /* Light gray border for list items */
+}
+
+.message-item:last-child {
+  border-bottom: none;
+}
+
+.message-sender {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #005b99; /* Darker blue for sender's name */
+}
+
+.message-content {
+  flex: 1;
+  color: #666666; /* Medium gray for message content */
+}
+
+.message-actions {
+  display: flex;
+  align-items: center;
+}
+
+.message-delete, .message-view {
+  background: none;
+  border: none;
+  color: #007acc; /* Bright blue for actions */
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.message-delete:hover, .message-view:hover {
+  color: #005b99; /* Darker blue on hover */
+}
+
+.message-date {
+  font-size: 0.85rem;
+  color: #999999; /* Light gray for date */
+}
+
+.message-detail {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #2a2a2a; /* Darker background for message detail */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+  color: #ffffff; /* White text color for contrast */
+}
+
+.message-detail h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #007acc; /* Bright blue for detail heading */
+}
+
+.message-detail p {
+  margin: 5px 0;
+  color: #cccccc; /* Light gray for detail content */
+}
+
+.message-close {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #e74c3c; /* Red background for close button */
+  border: none;
+  color: #ffffff; /* White text color for contrast */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.message-close:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+.fas.fa-trash, .fas.fa-envelope {
+  color: #007acc; /* Bright blue for icons */
+}

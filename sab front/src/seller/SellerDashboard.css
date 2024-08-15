@@ -1,0 +1,398 @@
+/* Sidebar collapse button */
+.seller-sidebar-toggle {
+  background-color: #a8deea;
+  color: #242424;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  transform: translateX(-100%);
+  z-index: 1000;
+}
+
+/* Search bar styling */
+.seller-search-bar {
+  margin-bottom: 20px;
+}
+
+.seller-search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444444;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.seller-search-button {
+  background-color: #a8deea;
+  color: #242424;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.seller-search-button:hover {
+  background-color: #87c3d7;
+}
+
+/* Pagination controls */
+.seller-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.seller-pagination button {
+  background-color: #a8deea;
+  color: #242424;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seller-pagination button:hover {
+  background-color: #87c3d7;
+}
+.property-navigation {
+  display: flex;
+  justify-content: space-between; /* Ensure buttons are spaced out evenly */
+  margin-top: 20px; /* Add some spacing above the navigation buttons */
+}
+
+.property-navigation button {
+  padding: 12px 20px; /* Increased padding for a more substantial button */
+  border: none;
+  border-radius: 8px; /* More rounded corners for the button */
+  font-size: 1.1rem; /* Slightly larger font size for better visibility */
+  cursor: pointer;
+  background-color: #00acc1; /* Bright teal background for button */
+  color: #fff;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.property-navigation button:hover {
+  background-color: #008b9a; /* Darker teal on hover for contrast */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.property-navigation button:active {
+  background-color: #007a88; /* Even darker teal for active state */
+  transform: translateY(0); /* Remove lift effect on click */
+}
+
+/* Wrapper for the entire dashboard */
+.seller-dashboard {
+  display: flex;
+  background-color: #242424; /* Dark background for the entire dashboard */
+  color: #f5f5f5; /* Light text color for readability */
+  height: 100vh;
+}
+
+/* Sidebar styling */
+.seller-sidebar {
+  width: 250px;
+  background-color: #1a1a1a; /* Slightly lighter dark background for sidebar */
+  padding: 20px;
+}
+
+.seller-sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.seller-sidebar-menu li {
+  margin: 20px 0;
+  cursor: pointer;
+  color: #a8deea; /* Light cyan color for menu items */
+  font-weight: bold;
+}
+
+.seller-sidebar-menu li:hover {
+  color: #ffffff; /* White color on hover for better visibility */
+}
+
+/* Content area styling */
+.seller-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #242424; /* Consistent dark background for content area */
+}
+
+/* Dashboard landing page content */
+.seller-dashboard-content {
+  text-align: center;
+  padding: 50px;
+}
+
+.seller-welcome {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #a8deea; /* Light cyan for welcome text */
+}
+
+.seller-intro {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #e0e0e0; /* Light grey for introductory text */
+}
+.seller-insights-overview {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+/* Insights Page - Cards styling */
+.seller-insight-card {
+  width: 250px;
+  height: 150px;
+  background-color: #333333; /* Dark background for insight cards */
+  border: 3px solid #a8deea; /* Light cyan border */
+  border: 3px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  color: #a8deea; /* Light cyan text color */
+  margin: 10px;
+    padding: 10px;
+  border-radius: 10px;
+}
+
+.seller-insight-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Property list container */
+.seller-property-list {
+  margin-top: 20px;
+}
+
+.seller-property-item {
+  border: 1px solid #333333; /* Dark border for property items */
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #1a1a1a; /* Slightly lighter dark background */
+}
+
+.seller-property-title {
+  color: #a8deea; /* Light cyan color for property titles */
+}
+
+/* Buttons styling */
+.seller-edit-button,
+.seller-save-button {
+  background-color: #a8deea; /* Light cyan background for buttons */
+  color: #242424; /* Dark text color for contrast */
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.seller-edit-button:hover,
+.seller-save-button:hover {
+  background-color: #87c3d7; /* Slightly darker cyan on hover */
+}
+
+/* Input fields styling */
+.seller-input {
+  margin: 5px 0;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #333333; /* Dark background for inputs */
+  color: #ffffff; /* White text color */
+  border: 1px solid #444444; /* Dark border for inputs */
+  border-radius: 5px;
+}
+
+/* Insights Page - Charts styling */
+.seller-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.chart-container {
+  background-color: #333333; /* Dark background for chart containers */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.chart-container h3 {
+  margin-bottom: 20px;
+  color: #a8deea; /* Light cyan color for chart headings */
+}
+
+/* Alignments for ResponsiveContainer */
+.recharts-responsive-container {
+  width: 100% !important;
+}
+.seller-messages {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #333333;
+  color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
+.messages-container {
+  display: flex;
+  height: 100%;
+}
+
+.conversations-list {
+  width: 30%;
+  background-color: #242424;
+  padding: 20px;
+  border-right: 1px solid #444444;
+  overflow-y: auto;
+}
+
+.conversations-list h3 {
+  color: #a8deea;
+  margin-bottom: 10px;
+}
+
+.conversation-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #f5f5f5;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.conversation-item.active {
+  background-color: #00acc1;
+  color: #ffffff;
+}
+
+.conversation-item:hover {
+  background-color: #444444;
+}
+
+.chat-window {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.chat-header {
+  padding: 10px;
+  background-color: #444444;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #242424;
+  border-radius: 8px;
+}
+
+.message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+.message.received {
+  background-color: #444444;
+  align-self: flex-start;
+  color: #e0e0e0;
+}
+
+.message.sent {
+  background-color: #00acc1;
+  align-self: flex-end;
+  color: #fff;
+}
+
+.message-time {
+  font-size: 0.8rem;
+  color: #e0e0e0;
+  margin-top: 5px;
+  display: block;
+}
+
+.chat-input {
+  display: flex;
+  margin-top: 10px;
+  border-radius: 8px;
+  background-color: #242424;
+  padding: 10px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #00acc1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chat-input button:hover {
+  background-color: #007b8a;
+}
+/* Home Button Styling */
+.home-button {
+  background-color: #a8deea;
+  color: #242424;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.home-button:hover {
+  background-color: #87c3d7;
+  transform: translateY(-2px);
+}
+
+.home-button:active {
+  background-color: #007a88;
+  transform: translateY(0);
+}

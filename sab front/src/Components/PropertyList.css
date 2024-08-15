@@ -1,0 +1,129 @@
+.property-list {
+  padding: 40px;
+  max-width: 1000px; 
+  margin: 0 auto;
+  background-color:lightgray;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.property-list:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.property-list h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.property-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.property-list li {
+  display: flex; /* Align items side by side */
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 25px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #f9f9f9;
+}
+
+.property-list li:hover {
+  background-color: #f0f4f8;
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.property-list li:last-child {
+  border-bottom: none;
+}
+
+.property-list img {
+  width: 400%; /* Fixed width for image */
+  height: 400%; /* Fixed height to maintain consistency */
+  aspect-ratio: 3/2;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 150px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.property-list img:hover {
+  transform: scale(1.05);
+}
+
+.property-details {
+  flex-grow: 1; /* Ensure details section takes up remaining space */
+}
+
+.property-details strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #2c3e50; /* Darker color for better readability */
+  font-weight: 600;
+}
+
+.property-details p {
+  margin: 5px 0;
+  color: #7f8c8d;
+  font-size: 1rem;
+}
+
+.property-details .price {
+  font-weight: 700;
+  color: #e74c3c;
+  font-size: 1.3rem;
+}
+
+.property-details a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #2980b9;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.property-details a:hover {
+  background-color: #3498db;
+  transform: translateY(-2px);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .property-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .property-list img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .property-details {
+    text-align: center;
+  }
+
+  .property-details a {
+    margin-top: 15px;
+  }
+}

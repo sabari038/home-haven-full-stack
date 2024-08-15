@@ -1,0 +1,243 @@
+/* RealEstateSignin.css */
+
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #242424, #a8deea);
+    padding: 20px;
+    padding-top: 50px;
+    
+}
+
+.signin-content {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+ 
+
+.signin-form {
+    padding: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+    border-radius: 20px;
+}
+
+.signin-form-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.signin-form-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #6e8efb;
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 5px;
+}
+
+.signin-form-group {
+    position: relative;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.signin-form-group .fa {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.signin-form-group input {
+    padding: 15px 20px 15px 50px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #333;
+    background: #f7f7f7;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.signin-form-group input:focus {
+    border-color: #6e8efb;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(110, 142, 251, 0.3);
+}
+
+.signin-form-group input:focus + .fa {
+    color: #6e8efb;
+}
+
+.signin-form-group.signin-form-button input {
+    background: #6e8efb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signin-form-group.signin-form-button input:hover {
+    background: #5b7bf0;
+    transform: translateY(-3px);
+}
+
+.signin-form-error {
+    color: #e74c3c;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 1px solid #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-login p {
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.socicons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-link {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #6e8efb;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+    color: #5b7bf0;
+    transform: scale(1.2);
+}
+
+.signin-image {
+    flex: 1;
+    background: #6e8efb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.signin-image figure {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signinimg {
+    max-width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.signinimg:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.signin-image-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.signin-image-link:hover {
+    color: #ccc;
+    transform: translateY(-3px);
+}
+
+.agree-term {
+    margin-right: 10px;
+    transform: translateY(2px);
+    transition: all 0.3s ease;
+}
+
+.agree-term:checked {
+    background-color: #6e8efb;
+    border-color: #6e8efb;
+}
+
+.label-agree-term {
+    color: #333;
+    font-size: 0.95rem;
+    vertical-align: middle;
+    transition: color 0.3s ease;
+}
+
+.label-agree-term:hover {
+    color: #6e8efb;
+}
+
+@media screen and (max-width: 768px) {
+    .signin-content {
+        flex-direction: column;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .signin-form,
+    .signin-image {
+        padding: 30px;
+    }
+
+    .signin-form {
+        padding-bottom: 0;
+    }
+
+    .signin-image {
+        border-radius: 20px;
+    }
+
+    .signin-image-link {
+        margin-top: 10px;
+    }
+}

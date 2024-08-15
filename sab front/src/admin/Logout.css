@@ -1,0 +1,38 @@
+.logout-container {
+  padding: 20px;
+  background-color: #f4f4f4; /* Light gray background for a clean look */
+  border-radius: 12px; /* More rounded corners for a modern feel */
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
+  color: #333333; /* Dark gray text color for readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.logout-h1 {
+  margin-bottom: 20px;
+  font-size: 1.6rem; /* Slightly larger font size for prominence */
+  color: #004d99; /* Deep blue color for heading */
+}
+
+.logout-p {
+  font-size: 1.1rem; /* Slightly larger font size for readability */
+  color: #666666; /* Medium gray color for paragraph text */
+  margin-bottom: 20px;
+}
+
+.logout-button {
+  padding: 12px 20px; /* Increased padding for a more substantial button */
+  border: none;
+  border-radius: 8px; /* Rounded corners for the button */
+  font-size: 1.1rem; /* Slightly larger font size for visibility */
+  cursor: pointer;
+  background-color: #004d99; /* Deep blue background for button */
+  color: #ffffff; /* White text color for contrast */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for hover effect */
+}
+
+.logout-button:hover {
+  background-color: #003366; /* Darker blue on hover */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}

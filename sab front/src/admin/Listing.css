@@ -1,0 +1,85 @@
+.content {
+  background-color: #282c34; /* Dark blue-gray background for the entire content area */
+}
+
+.listing-container {
+  padding: 30px;
+  background-color: #1c1f26; /* Dark teal-gray background for contrast */
+  border-radius: 12px; /* More rounded corners for a modern look */
+  max-width: 800px;
+  margin: 30px auto; /* Increased margin for better spacing */
+  color: #cfd8dc; /* Light gray-blue text color for readability */
+}
+
+.listing-header {
+  font-size: 2rem; /* Increased font size for prominence */
+  color: #00acc1; /* Bright teal for heading */
+  margin-bottom: 20px;
+  text-align: center; /* Center-align the heading */
+}
+
+.listing-description {
+  font-size: 1.1rem; /* Slightly smaller font size for description */
+  color: #b0bec5; /* Soft gray-blue color for description */
+  margin-bottom: 30px;
+}
+
+.listing-list, .listing-add {
+  margin-bottom: 30px;
+}
+
+.listing-list-header, .listing-add-header {
+  font-size: 1.6rem; /* Slightly larger font size for subheadings */
+  color: #00acc1; /* Bright teal for subheadings */
+  margin-bottom: 15px;
+  font-weight: 600; /* Bold font for emphasis */
+}
+
+.listing-list-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.listing-list-item {
+  background-color: #37474f; /* Dark blue-gray background for list items */
+  padding: 15px;
+  margin-bottom: 15px; /* Increased margin for separation */
+  border: 1px solid #455a64; /* Darker border for subtle separation */
+  border-radius: 8px; /* More rounded corners for list items */
+  color: #cfd8dc; /* Light gray-blue text color */
+}
+
+.listing-list-item-category, .listing-list-item-address, .listing-list-item-price {
+  margin: 5px 0;
+}
+
+.listing-add-input {
+  display: block;
+  width: calc(100% - 22px);
+  padding: 12px; /* Increased padding for better usability */
+  margin-bottom: 15px; /* Increased margin for separation */
+  border: 1px solid #455a64; /* Darker border for inputs */
+  border-radius: 8px; /* More rounded corners for inputs */
+  background-color: #37474f; /* Dark blue-gray background for inputs */
+  color: #cfd8dc; /* Light gray-blue text color */
+}
+
+.listing-add-input::placeholder {
+  color: #78909c; /* Light gray-blue color for placeholder text */
+}
+
+.listing-add-button {
+  padding: 12px 20px; /* Increased padding for a more substantial button */
+  border: none;
+  border-radius: 8px; /* More rounded corners for the button */
+  font-size: 1.1rem; /* Slightly larger font size for better visibility */
+  cursor: pointer;
+  background-color: #00acc1; /* Bright teal background for button */
+  color: #fff;
+  transition: background 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.listing-add-button:hover {
+  background-color: #00838f; /* Darker teal on hover */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
